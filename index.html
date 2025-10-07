@@ -7,62 +7,89 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(120deg, #89f7fe, #66a6ff);
-            color: #333;
+            background: radial-gradient(circle at center, #1e2a4a 0%, #0a0a0a 100%);
+            color: #ffffff;
             margin: 0;
             padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
             text-align: center;
+            position: relative; 
+            overflow: hidden; 
+        }
+
+        .background-logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 55vw; 
+            height: auto;
+            transform: translate(-50%, -50%);
+            opacity: 0.15;
+            z-index: 0; 
+            pointer-events: none; 
+        }
+
+        h1, p, a.button, footer {
+            position: relative;
+            z-index: 1;
         }
 
         h1 {
-            font-size: 3em;
-            margin-bottom: 0.2em;
-            color: #fff;
-            text-shadow: 2px 2px #333;
+            font-size: 3.5em; 
+            margin-bottom: 0.3em;
+            color: #66a6ff;
         }
 
         p {
-            font-size: 1.2em;
-            color: #f0f0f0;
-            margin-bottom: 1.5em;
+            font-size: 1.3em; 
+            color: #dddddd;
+            margin-bottom: 2em;
+            max-width: 650px;
         }
 
         a.button {
             text-decoration: none;
-            background-color: #fff;
-            color: #66a6ff;
-            padding: 0.8em 1.5em;
-            border-radius: 8px;
+            background-color: #66a6ff;
+            color: #fff;
+            padding: 1em 2em; 
+            border-radius: 10px;
             font-weight: bold;
-            transition: 0.3s;
+            letter-spacing: 1px;
+            transition: 0.3s ease-in-out;
+            box-shadow: 0 4px 15px rgba(102, 166, 255, 0.4);
         }
 
         a.button:hover {
-            background-color: #66a6ff;
-            color: #fff;
+            background-color: #fff;
+            color: #121212; 
+            border: 3px solid #66a6ff;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 166, 255, 0.6);
         }
 
         footer {
             position: absolute;
-            bottom: 10px;
-            color: #fff;
-            font-size: 0.9em;
+            bottom: 20px; 
+            color: #555555;
+            font-size: 1em;
+            letter-spacing: 0.5px;
         }
     </style>
 </head>
 <body>
 
-    <h1>Lorem ipsum</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <img class="background-logo" src="image/logo.png" alt="Nautilus Logo">
+
+    <h1>Nautilus ROV</h1>
+    <p>ITU MTAL high school project team focused on developing underwater robotic systems and advancing marine technology.</p>
     <a class="button" href="https://github.com/itumtal-nautilusrov" target="_blank">GitHub Profile</a>
 
     <footer>
-        © 2025 Nautilus ROV
+        Where Light Fades, We Rise
     </footer>
 
 </body>
