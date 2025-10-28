@@ -21,7 +21,6 @@
             color: #e0e0e0;
         }
 
-        /* Header Styles */
         .header {
             background: rgba(20, 20, 20, 0.9);
             backdrop-filter: blur(10px);
@@ -68,7 +67,6 @@
             color: #4a90e2;
         }
 
-        /* Navigation Menu */
         .nav-toggle {
             background: rgba(74, 144, 226, 0.1);
             border: 1px solid rgba(74, 144, 226, 0.3);
@@ -152,7 +150,6 @@
             padding-left: 30px;
         }
 
-        /* Submenu Styles */
         .nav-item {
             position: relative;
         }
@@ -196,7 +193,6 @@
             transform: rotate(180deg);
         }
 
-        /* Hero Section */
         .hero {
             flex: 1;
             display: flex;
@@ -289,20 +285,17 @@
             transform: translateY(-2px);
         }
 
-        /* Info Section General Styles */
         .info-section {
             padding: 60px 40px;
             background: rgba(255, 255, 255, 0.01);
         }
 
-        /* -- YENİ SINIF BURADA -- */
         .main-rov-image {
             max-width: 70%;
             height: auto;
             border-radius: 0;
         }
 
-        /* Section Header Styles */
         .section-header {
             max-width: 900px;
             margin: 0 auto 40px;
@@ -333,7 +326,6 @@
             margin-top: 20px;
         }
 
-        /* Teknofest Section Styles */
         .teknofest-container {
             max-width: 1200px;
             margin: 0 auto;
@@ -473,7 +465,6 @@
             font-size: 0.9rem;
         }
 
-        /* Responsive */
         @media (max-width: 768px) {
             .header {
                 padding: 15px 20px;
@@ -510,7 +501,6 @@
                 height: 130px;
             }
             
-            /* -- YENİ MEDYA SORGUSU KURALI BURADA -- */
             .main-rov-image {
                 max-width: 90%;
             }
@@ -549,11 +539,10 @@
 </head>
 <body>
 
-    <!-- Header -->
     <header class="header">
         <div class="header-content">
             <div class="header-left">
-                <img src="main/image/logo.png" alt="Nautilus ROV Logo" class="logo">
+                <img src="../image/logo.png" alt="Nautilus ROV Logo" class="logo">
                 <h1 class="title">Nautilus <span>ROV</span> Takımı</h1>
             </div>
             <button class="nav-toggle" id="navToggle">
@@ -566,25 +555,24 @@
             </button>
         </div>
         <nav class="nav-menu" id="navMenu">
-            <a href="main/index.html">Ana Sayfa</a>
+            <a href="../index.html">Ana Sayfa</a>
             <div class="nav-item">
                 <a href="#" id="vehiclesToggle">
                     Araçlar
                     <span class="arrow">▼</span>
                 </a>
                 <div class="submenu" id="vehiclesSubmenu">
-                    <a href="main/nautilus25.html">Nautilus25'</a>
+                    <a href="../nautilus25.html">Nautilus25'</a>
                 </div>
             </div>
-            <a href="main/gallery.html">Galeri</a>
-            <a href="main/contact.html">İletişim</a>
+            <a href="../gallery.html">Galeri</a>
+            <a href="../contact.html">İletişim</a>
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
-            <img src="main/image/logo.png" alt="Nautilus ROV Logo" class="hero-logo">
+            <img src="../image/logo.png" alt="Nautilus ROV Logo" class="hero-logo">
             <h2 class="hero-title">
                 Sualtı Teknolojilerinde <br>
                 <span class="highlight">Yenilikçi Çözümler</span>
@@ -596,13 +584,9 @@
         </div>
     </section>
 
-    <!-- Main Image Section -->
     <section class="info-section" style="text-align: center;">
-        <!-- -- HTML DEĞİŞİKLİĞİ BURADA -- -->
-        <img src="main/image/main-no-bg.png" alt="Nautilus Main Image" class="main-rov-image">
+        <img src="../image/main-no-bg.png" alt="Nautilus Main Image" class="main-rov-image">
     </section>
-
-    <!-- About Section -->
     <section class="info-section" id="about" style="padding-top: 80px;">
         <div class="section-header">
             <h2 class="section-title">Hakkımızda</h2>
@@ -619,11 +603,9 @@
         </div>
     </section>
 
-    <!-- Teknofest Section -->
     <section class="info-section" id="teknofest" style="padding-top: 80px;">
         <div class="teknofest-container" style="grid-template-columns: 1.4fr 1fr; gap: 50px;">
 
-        <!-- LEFT: title + text -->
         <div class="teknofest-content" style="display: flex; flex-direction: column; justify-content: center;">
             <h2 class="section-title" style="margin-bottom: 40px; text-align: center;">Teknofest 2026</h2>
                 <p class="teknofest-text">
@@ -631,20 +613,18 @@
                 </p>
         </div>
 
-        <!-- RIGHT: image -->
         <div class="teknofest-image">
-            <img src="main/image/teknofest.jpg" alt="Teknofest 2026">
+            <img src="../image/teknofest.jpg" alt="Teknofest 2026">
         </div>
 
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
                 <div class="footer-logo-section">
-                    <img src="main/image/logo.png" alt="Nautilus ROV Logo" class="footer-logo">
+                    <img src="../image/logo.png" alt="Nautilus ROV Logo" class="footer-logo">
                     <div>
                         <div class="footer-title">Nautilus <span>ROV</span></div>
                     </div>
@@ -655,16 +635,16 @@
                 <h3 class="footer-heading">Sosyal Medya</h3>
                 <div class="social-links">
                     <a href="https://www.instagram.com/nautilusrovteam" target="_blank" class="social-link" title="Instagram">
-                        <img src="main/image/bot-contacts/instagram.png" alt="Instagram">
+                        <img src="../image/bot-contacts/instagram.png" alt="Instagram">
                     </a>
                     <a href="https://github.com/itumtal-nautilusrov" target="_blank" class="social-link" title="Github">
-                        <img src="main/image/bot-contacts/github.png" alt="Github">
+                        <img src="../image/bot-contacts/github.png" alt="Github">
                     </a>
                     <a href="https://linkedin.com/company/nautilusrov" target="_blank" class="social-link" title="LinkedIn">
-                        <img src="main/image/bot-contacts/linkedin.png" alt="LinkedIn">
+                        <img src="../image/bot-contacts/linkedin.png" alt="LinkedIn">
                     </a>
                     <a href="mailto:nautilusrovteam@gmail.com" class="social-link" title="Mail">
-                        <img src="main/image/bot-contacts/mail.png" alt="Mail">
+                        <img src="../image/bot-contacts/mail.png" alt="Mail">
                     </a>
                 </div>
             </div>
@@ -677,7 +657,7 @@
         </div>
         
         <div class="footer-bottom">
-            © <a href="main/index.html">Nautilus ROV Takımı</a>, All Right Reserved.
+            © <a href="../index.html">Nautilus ROV Takımı</a>, All Right Reserved.
         </div>
     </footer>
 
@@ -688,20 +668,17 @@
         const vehiclesSubmenu = document.getElementById('vehiclesSubmenu');
         const arrow = vehiclesToggle.querySelector('.arrow');
 
-        // Main menu toggle
         navToggle.addEventListener('click', () => {
             navToggle.classList.toggle('active');
             navMenu.classList.toggle('active');
         });
 
-        // Vehicles submenu toggle
         vehiclesToggle.addEventListener('click', (e) => {
             e.preventDefault();
             vehiclesSubmenu.classList.toggle('active');
             arrow.classList.toggle('rotate');
         });
 
-        // Close menu when clicking outside
         document.addEventListener('click', (e) => {
             if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) {
                 navToggle.classList.remove('active');
@@ -709,7 +686,6 @@
             }
         });
 
-        // Close menu when clicking regular links
         navMenu.querySelectorAll('a[href^="index.html"], a[href^="gallery.html"], a[href^="contact.html"]').forEach(link => {
             link.addEventListener('click', () => {
                 navToggle.classList.remove('active');
@@ -717,7 +693,6 @@
             });
         });
 
-        // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
